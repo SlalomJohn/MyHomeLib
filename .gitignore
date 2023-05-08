@@ -5,3 +5,5 @@ Out
 __history
 *.~pas
 git_sync.cmd
+*.identcache
+*.local
