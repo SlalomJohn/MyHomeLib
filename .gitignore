@@ -3,3 +3,4 @@ Out
 /Program/*.dsk
 __history
 *.~pas
+git_sync.cmd
