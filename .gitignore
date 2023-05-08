@@ -6,4 +6,8 @@ __history
 *.~pas
 git_sync.cmd
 *.identcache
+<<<<<<< HEAD
 *.local
+=======
+*.local
+>>>>>>> 4e4329aadcc54e9bca9363c95b65e24aa2783c95
