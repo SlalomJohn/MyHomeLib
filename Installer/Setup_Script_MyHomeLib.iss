@@ -25,23 +25,36 @@ VersionInfoVersion=2.3.5.845
 
 [Dirs]
 Name: "{userappdata}\MyHomeLib"; Permissions: everyone-modify
+Name: "{app}\update\"; Permissions: everyone-modify
 [Files]
 Source: .\MyHomeLib_2_3\AlReader\*.*; DestDir: {app}\AlReader
 Source: .\MyHomeLib_2_3\AlReader\AlReader2\*.*; DestDir: {app}\AlReader\AlReader2\
 Source: .\MyHomeLib_2_3\converters\fb2lrf\*.*; DestDir: {app}\converters\fb2lrf\
-Source: .\MyHomeLib_2_3\converters\fb2pdf\*.*; DestDir: {app}\converters\fb2pdf\
-Source: .\MyHomeLib_2_3\converters\fb2epub\*.*; DestDir: {app}\converters\fb2epub\
 Source: .\MyHomeLib_2_3\converters\fb2mobi\*.*; DestDir: {app}\converters\fb2mobi\
+
+Source: .\MyHomeLib_2_3\converters\fb2pdf\*.*; DestDir: {app}\converters\fb2pdf\
+Source: .\MyHomeLib_2_3\converters\fb2pdf\data\*.*; DestDir: {app}\converters\fb2pdf\data\
+Source: .\MyHomeLib_2_3\converters\fb2pdf\lib\*.*; DestDir: {app}\converters\fb2pdf\lib\
+Source: .\MyHomeLib_2_3\converters\fb2pdf\UI\*.*; DestDir: {app}\converters\fb2pdf\UI\
+
+Source: .\MyHomeLib_2_3\converters\fb2epub\*.*; DestDir: {app}\converters\fb2epub\
+Source: .\MyHomeLib_2_3\converters\fb2epub\DefaultSettings\*.*; DestDir: {app}\converters\fb2epub\DefaultSettings\
+Source: .\MyHomeLib_2_3\converters\fb2epub\FireFoxPlugin\*.*; DestDir: {app}\converters\fb2epub\FireFoxPlugin\
+Source: .\MyHomeLib_2_3\converters\fb2epub\ru\*.*; DestDir: {app}\converters\fb2epub\ru\
+
 Source: .\MyHomeLib_2_3\genres_nonfb2.glst; DestDir: {app}; Flags: replacesameversion
 Source: .\MyHomeLib_2_3\genres_fb2.glst; DestDir: {app}; Flags: replacesameversion
-Source: .\MyHomeLib_2_3\sqlite3.dll; DestDir: {app}; Flags: replacesameversion
-Source: .\MyHomeLib_2_3\libeay32.dll; DestDir: {app}; Flags: replacesameversion
-Source: .\MyHomeLib_2_3\ssleay32.dll; DestDir: {app}; Flags: replacesameversion
-Source: .\MyHomeLib_2_3\collections.ini; DestDir: {userappdata}\MyHomeLib
+
+Source: .\MyHomeLib_2_3\collections.ini; DestDir: {app}; Flags: replacesameversion
 Source: .\MyHomeLib_2_3\MyHomeLib.exe; DestDir: {app}; Flags: replacesameversion
 Source: .\MyHomeLib_2_3\MyHomeLib.chm; DestDir: {app}; Flags: replacesameversion
 Source: .\MyHomeLib_2_3\MyHomeLib.url; DestDir: {app}; Flags: replacesameversion
 Source: .\MyHomeLib_2_3\License.txt; DestDir: {app}; Flags: replacesameversion
+
+Source: .\MyHomeLib_2_3\sqlite3.dll; DestDir: {app}; Flags: replacesameversion
+Source: .\MyHomeLib_2_3\libeay32.dll; DestDir: {app}; Flags: replacesameversion
+Source: .\MyHomeLib_2_3\ssleay32.dll; DestDir: {app}; Flags: replacesameversion
+
 [Icons]
 Name: {group}\MyHomeLib; Filename: {app}\MyHomeLib.exe; WorkingDir: {app}; IconFilename: {app}\MyHomeLib.exe; IconIndex: 0; Comment: MyHomeLib
 Name: {group}\Справка по MyHomeLib; Filename: {app}\MyHomeLib.chm; WorkingDir: {app}; IconFilename: {sys}\ieframe.dll; IconIndex: 36; Comment: MyHomeLib Help

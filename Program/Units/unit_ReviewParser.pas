@@ -4,7 +4,7 @@
   *
   * Copyright (C) 2008-2023 Oleksiy Penkov (aka Koreec)
   *
-  * Author(s)           eg (http://forum.home-lib.net)
+  * Author(s)           eg (https://github.com/OleksiyPenkov/MyHomeLib/)
   * Created             12.02.2010
   * Description         A parser for Lib.rus.ec / Flibusta book reviews
   *
@@ -12,6 +12,7 @@
   *
   * History
   * NickR 15.02.2010    Код переформатирован
+  * DoC 2023-05-08	Исправлены ссылки
   *
   ****************************************************************************** *)
 

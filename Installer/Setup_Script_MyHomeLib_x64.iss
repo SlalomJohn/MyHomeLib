@@ -26,6 +26,7 @@ ArchitecturesInstallIn64BitMode=x64
 
 [Dirs]
 Name: "{userappdata}\MyHomeLib"; Permissions: everyone-modify
+Name: "{app}\update\"; Permissions: everyone-modify
 [Files]
 Source: .\MyHomeLib_2_3x64\AlReader\*.*; DestDir: {app}\AlReader
 Source: .\MyHomeLib_2_3x64\AlReader\AlReader2\*.*; DestDir: {app}\AlReader\AlReader2\
