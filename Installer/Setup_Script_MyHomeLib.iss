@@ -1,5 +1,5 @@
 ﻿[Setup]
-AppName=MyHomeLib
+AppName=MyHomeLib x32
 PrivilegesRequired=poweruser
 DefaultDirName={commonpf}\MyHomeLib\
 DefaultGroupName=MyHomeLib
@@ -20,8 +20,8 @@ UsePreviousAppDir=yes
 AllowNoIcons=yes
 Compression=lzma/ultra
 SolidCompression=yes
-LicenseFile=License.txt
-VersionInfoVersion=2.4.0.848
+LicenseFile=..\..\MyHomeLib_2_4\License.txt
+VersionInfoVersion=2.4
 
 [Dirs]
 Name: "{userappdata}\MyHomeLib"; Permissions: everyone-modify
@@ -46,10 +46,10 @@ Source: ..\..\MyHomeLib_2_4\genres_nonfb2.glst; DestDir: {app}; Flags: replacesa
 Source: ..\..\MyHomeLib_2_4\genres_fb2.glst; DestDir: {app}; Flags: replacesameversion
 
 Source: ..\..\MyHomeLib_2_4\collections.ini; DestDir: {app}; Flags: replacesameversion
-Source: ..\..\MyHomeLib_2_4\MyHomeLib.exe; DestDir: {app}; Flags: replacesameversion
+Source: ..\..\MyHomeLib_2_4\License.txt; DestDir: {app}; Flags: replacesameversion
 Source: ..\..\MyHomeLib_2_4\MyHomeLib.chm; DestDir: {app}; Flags: replacesameversion
 Source: ..\..\MyHomeLib_2_4\MyHomeLib.url; DestDir: {app}; Flags: replacesameversion
-Source: ..\..\MyHomeLib_2_4\License.txt; DestDir: {app}; Flags: replacesameversion
+Source: ..\..\MyHomeLib_2_4\MyHomeLib.exe; DestDir: {app}; Flags: replacesameversion
 
 Source: ..\..\MyHomeLib_2_4\sqlite3.dll; DestDir: {app}; Flags: replacesameversion
 Source: ..\..\MyHomeLib_2_4\libeay32.dll; DestDir: {app}; Flags: replacesameversion
