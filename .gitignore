@@ -1,0 +1,10 @@
+*.dcu
+*.exe
+Out
+/Program/*.dsk
+__history
+*.~pas
+.git_*.cmd
+*.identcache
+*.local
+*.local
