@@ -2,9 +2,7 @@
 {                                                                              }
 { MyHomeLib                                                                    }
 {                                                                              }
-{ Version 0.9                                                                  }
-{ 20.08.2008                                                                   }
-{ Copyright (c) Oleksiy Penkov  oleksiy.penkov@gmail.com                          }
+{ Copyright (C) 2008-2023 Oleksiy Penkov oleksiy.penkov@gmail.com              }
 {                                                                              }
 { @author Nick Rymanov nrymanov@gmail.com                                      }
 {                                                                              }
@@ -168,7 +166,7 @@ begin
         try
           Zip := TMHLZip.Create(FFiles[i], True);
           j := 0; numFb2FilesInZip := 0;
-          if Zip.Find('*.*') then
+          if Zip.Find('*.fb2') then
           repeat
             R.Clear;
             AFileName := Zip.LastName;
@@ -334,4 +332,3 @@ begin
   end;
 end;
 end.
-
