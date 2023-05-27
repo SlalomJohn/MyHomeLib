@@ -11,10 +11,8 @@ object frmCreateMask: TfrmCreateMask
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poOwnerFormCenter
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 8
@@ -57,12 +55,13 @@ object frmCreateMask: TfrmCreateMask
     Caption = 'pnButtons'
     ShowCaption = False
     TabOrder = 2
-    ExplicitTop = 383
+    ExplicitTop = 406
+    ExplicitWidth = 430
     DesignSize = (
       434
       41)
     object btnOk: TButton
-      Left = 270
+      Left = 262
       Top = 10
       Width = 75
       Height = 25
@@ -71,9 +70,10 @@ object frmCreateMask: TfrmCreateMask
       Default = True
       TabOrder = 0
       OnClick = SaveMask
+      ExplicitLeft = 258
     end
     object btnCancel: TButton
-      Left = 351
+      Left = 343
       Top = 10
       Width = 75
       Height = 25
@@ -82,6 +82,7 @@ object frmCreateMask: TfrmCreateMask
       Caption = '&'#1054#1090#1084#1077#1085#1072
       ModalResult = 2
       TabOrder = 1
+      ExplicitLeft = 339
     end
   end
   object PageControl1: TPageControl
@@ -89,14 +90,15 @@ object frmCreateMask: TfrmCreateMask
     Top = 59
     Width = 434
     Height = 348
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alBottom
     MultiLine = True
     TabOrder = 1
     OnChange = PageControl1Change
+    ExplicitTop = 58
+    ExplicitWidth = 430
     object TabSheet1: TTabSheet
       Caption = #1055#1088#1072#1074#1080#1083#1072' '#1087#1086#1089#1090#1088#1086#1077#1085#1080#1103' '#1096#1072#1073#1083#1086#1085#1072
-      ExplicitHeight = 296
       object stDescription: TMHLStaticTip
         Left = 0
         Top = 0
@@ -124,7 +126,6 @@ object frmCreateMask: TfrmCreateMask
     object TabSheet2: TTabSheet
       Caption = #1054#1090#1083#1072#1076#1082#1072' '#1096#1072#1073#1083#1086#1085#1072
       ImageIndex = 1
-      ExplicitHeight = 296
       object Label5: TLabel
         Left = 104
         Top = 9
@@ -191,7 +192,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 110
         Height = 21
         TabOrder = 1
-        Text = #1051#1091#1082#1100#1103#1085#1077#1085#1082#1086
+        Text = #1048#1074#1072#1085#1086#1074
         OnChange = ParseTestTemplate
       end
       object Edit2: TEdit
@@ -200,7 +201,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 106
         Height = 21
         TabOrder = 2
-        Text = #1057#1077#1088#1075#1077#1081
+        Text = #1048#1074#1072#1085
         OnChange = ParseTestTemplate
       end
       object Edit3: TEdit
@@ -209,7 +210,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 103
         Height = 21
         TabOrder = 3
-        Text = #1042#1072#1089#1080#1083#1100#1077#1074#1080#1095
+        Text = #1048#1074#1072#1085#1086#1074#1080#1095
         OnChange = ParseTestTemplate
       end
       object Edit5: TEdit
@@ -218,7 +219,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 103
         Height = 21
         TabOrder = 6
-        Text = #1048#1074#1072#1085#1086#1074#1080#1095
+        Text = #1055#1077#1090#1088#1086#1074#1080#1095
         OnChange = ParseTestTemplate
       end
       object Edit4: TEdit
@@ -227,7 +228,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 106
         Height = 21
         TabOrder = 5
-        Text = #1053#1080#1080#1082#1086#1083#1072#1081
+        Text = #1055#1077#1090#1088
         OnChange = ParseTestTemplate
       end
       object Edit6: TEdit
@@ -236,7 +237,7 @@ object frmCreateMask: TfrmCreateMask
         Width = 110
         Height = 21
         TabOrder = 4
-        Text = #1055#1072#1074#1083#1077#1085#1082#1086
+        Text = #1055#1077#1090#1088#1086#1074
         OnChange = ParseTestTemplate
       end
       object CheckBox2: TCheckBox

@@ -40,8 +40,34 @@ implementation
 
 {$R *.dfm}
 
+function GetMyVersion(Ln:byte):string;
+type
+  TVerInfo=packed record
+    Nevazhno: array[0..47] of byte;
+    Minor,Major,Build,Release: word;
+  end;
+var
+  s:TResourceStream;
+  v:TVerInfo;
+  RP:string;
+begin
+  result:='';
+  try
+    s:=TResourceStream.Create(HInstance,'#1',RT_VERSION);
+    if s.Size>0 then begin
+      s.Read(v,SizeOf(v));
+      RP:=IntToStr(v.Major)+'.'+IntToStr(v.Minor);
+      if Ln=0 then RP:=RP+'.'+IntToStr(v.Release)+'.'+IntToStr(v.Build);
+
+      result:=RP;
+    end;
+  s.Free;
+  except; end;
+end;
+
 procedure TfrmSplash.FormCreate(Sender: TObject);
 begin
+  lblVersion.Caption := GetMyVersion(1);
   {$IFDEF  WIN64}
      lblVersion.Caption := lblVersion.Caption + ' x64';
   {$ENDIF}

@@ -3047,12 +3047,12 @@ object frmSplash: TfrmSplash
     Layout = tlCenter
   end
   object lblVersion: TLabel
-    Left = 340
+    Left = 327
     Top = 94
-    Width = 30
+    Width = 43
     Height = 23
     Alignment = taRightJustify
-    Caption = '2.3'
+    Caption = 'MHL'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 259580
     Font.Height = -19
