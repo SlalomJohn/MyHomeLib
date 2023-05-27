@@ -1,0 +1,60 @@
+package MHL;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'MHL'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  vcl,
+  vclactnband,
+  vclx,
+  xmlrtl,
+  soaprtl,
+  VirtualTreesDR;
+
+contains
+  BookInfoPanel in '..\Components\MHLComponents\BookInfoPanel.pas',
+  BookTreeView in '..\Components\MHLComponents\BookTreeView.pas',
+  fbd_xml in '..\Components\MHLComponents\fbd_xml.pas',
+  FBDAuthorTable in '..\Components\MHLComponents\FBDAuthorTable.pas' {frmEditAuthorFull},
+  FBDDocument in '..\Components\MHLComponents\FBDDocument.pas',
+  fictionbook_21 in '..\Components\MHLComponents\fictionbook_21.pas',
+  files_list in '..\Components\MHLComponents\files_list.pas',
+  MHLButtonedEdit in '..\Components\MHLComponents\MHLButtonedEdit.pas',
+  MHLComponents_Register in '..\Components\MHLComponents\MHLComponents_Register.pas',
+  MHLLinkLabel in '..\Components\MHLComponents\MHLLinkLabel.pas',
+  MHLSimplePanel in '..\Components\MHLComponents\MHLSimplePanel.pas',
+  MHLSplitter in '..\Components\MHLComponents\MHLSplitter.pas',
+  unit_AutoCompleteEdit in '..\Components\MHLComponents\unit_AutoCompleteEdit.pas',
+  unit_FB2Utils in '..\Components\MHLComponents\unit_FB2Utils.pas',
+  unit_MHLArchiveHelpers in '..\Components\MHLComponents\unit_MHLArchiveHelpers.pas',
+  unit_MHLHelpers in '..\Components\MHLComponents\unit_MHLHelpers.pas',
+  unit_StaticTip in '..\Components\MHLComponents\unit_StaticTip.pas';
+
+end.
