@@ -4,6 +4,7 @@ Out
 Common
 /Program/*.dsk
 __history*
+__recovery*
 *.~pas
 .git_*.cmd
 *.identcache

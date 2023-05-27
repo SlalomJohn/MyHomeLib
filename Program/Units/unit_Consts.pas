@@ -111,6 +111,7 @@ const
   TEMP_FOLDER_NAME = '_myhomelib';
   UPDATE_LOGFILE = 'update.log';
   PROGRAM_HOMEPAGE = 'https://github.com/OleksiyPenkov/myhomelib/';
+  PROGRAM_FORUMPAGE = 'https://github.com/OleksiyPenkov/MyHomeLib/issues';
 
   //
   // Номера вкладок в главном окне ( = tags)

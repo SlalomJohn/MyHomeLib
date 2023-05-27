@@ -6095,7 +6095,7 @@ end;
 
 procedure TfrmMain.GoForumExecute(Sender: TObject);
 begin
-  SimpleShellExecute(Handle, PROGRAM_HOMEPAGE);
+  SimpleShellExecute(Handle, PROGRAM_FORUMPAGE);
 end;
 
 procedure TfrmMain.GoSiteExecute(Sender: TObject);
