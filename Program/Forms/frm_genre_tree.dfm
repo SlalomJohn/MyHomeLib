@@ -11,9 +11,7 @@ object frmGenreTree: TfrmGenreTree
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  PixelsPerInch = 96
   TextHeight = 13
   object pnButtons: TPanel
     Left = 0
@@ -72,6 +70,8 @@ object frmGenreTree: TfrmGenreTree
     OnFreeNode = tvGenresTreeFreeNode
     OnGetText = tvGenresTreeGetText
     OnGetNodeDataSize = tvGenresTreeGetNodeDataSize
+    Touch.InteractiveGestures = [igPan, igPressAndTap]
+    Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia, igoPanGutter, igoParentPassthrough]
     Columns = <>
   end
 end

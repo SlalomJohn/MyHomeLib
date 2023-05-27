@@ -135,6 +135,33 @@ object frmEditBookInfo: TfrmEditBookInfo
     Margins.Bottom = 4
     Caption = '&'#1040#1074#1090#1086#1088#1099
     TabOrder = 1
+    object btnAddAuthor: TButton
+      Left = 530
+      Top = 23
+      Width = 78
+      Height = 26
+      Caption = '&'#1044#1086#1076#1072#1090#1080
+      TabOrder = 0
+      OnClick = btnAddAuthorClick
+    end
+    object btnAChange: TButton
+      Left = 530
+      Top = 55
+      Width = 78
+      Height = 27
+      Caption = #1047#1084#1110#1085#1080#1090#1080
+      TabOrder = 1
+      OnClick = btnAChangeClick
+    end
+    object btnADelete: TButton
+      Left = 530
+      Top = 88
+      Width = 78
+      Height = 26
+      Caption = '&'#1042#1080#1076#1072#1083#1080#1090#1080
+      TabOrder = 2
+      OnClick = btnADeleteClick
+    end
     object lvAuthors: TListView
       Left = 21
       Top = 29
@@ -146,66 +173,15 @@ object frmEditBookInfo: TfrmEditBookInfo
       Margins.Bottom = 4
       BevelKind = bkFlat
       BorderStyle = bsNone
-      Columns = <
-        item
-          Caption = #1060#1072#1084#1080#1083#1080#1103
-          Width = 222
-        end
-        item
-          Caption = #1048#1084#1103
-          Width = 196
-        end
-        item
-          AutoSize = True
-          Caption = #1054#1090#1095#1077#1089#1090#1074#1086
-        end>
+      Columns = <>
       ColumnClick = False
       GridLines = True
       HideSelection = False
       ReadOnly = True
       RowSelect = True
-      TabOrder = 0
+      TabOrder = 3
       ViewStyle = vsReport
       OnDblClick = btnAChangeClick
-    end
-    object btnAddAuthor: TButton
-      Left = 662
-      Top = 29
-      Width = 98
-      Height = 32
-      Margins.Left = 4
-      Margins.Top = 4
-      Margins.Right = 4
-      Margins.Bottom = 4
-      Caption = '&'#1044#1086#1073#1072#1074#1080#1090#1100
-      TabOrder = 1
-      OnClick = btnAddAuthorClick
-    end
-    object btnAChange: TButton
-      Left = 662
-      Top = 69
-      Width = 98
-      Height = 33
-      Margins.Left = 4
-      Margins.Top = 4
-      Margins.Right = 4
-      Margins.Bottom = 4
-      Caption = #1048'&'#1079#1084#1077#1085#1080#1090#1100
-      TabOrder = 2
-      OnClick = btnAChangeClick
-    end
-    object btnADelete: TButton
-      Left = 662
-      Top = 110
-      Width = 98
-      Height = 33
-      Margins.Left = 4
-      Margins.Top = 4
-      Margins.Right = 4
-      Margins.Bottom = 4
-      Caption = '&'#1059#1076#1072#1083#1080#1090#1100
-      TabOrder = 3
-      OnClick = btnADeleteClick
     end
   end
   object gbExtraInfo: TGroupBox

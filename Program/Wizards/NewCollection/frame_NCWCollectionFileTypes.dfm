@@ -8,7 +8,7 @@ inherited frameNCWCollectionFileTypes: TframeNCWCollectionFileTypes
   object pageHint: TMHLStaticTip [0]
     AlignWithMargins = True
     Left = 14
-    Top = 148
+    Top = 150
     Width = 432
     Height = 59
     Margins.Left = 14
@@ -22,19 +22,19 @@ inherited frameNCWCollectionFileTypes: TframeNCWCollectionFileTypes
     Width = 460
     ExplicitWidth = 460
     inherited lblTitle: TLabel
-      Width = 91
+      Width = 432
       Caption = #1060#1086#1088#1084#1072#1090' '#1092#1072#1081#1083#1086#1074
       ExplicitWidth = 91
     end
     inherited lblSubTitle: TLabel
-      Width = 361
+      Width = 425
       Caption = #1059#1082#1072#1078#1080#1090#1077', '#1082#1085#1080#1075#1080' '#1074' '#1082#1072#1082#1086#1084' '#1092#1086#1088#1084#1072#1090#1077' '#1042#1099' '#1087#1083#1072#1085#1080#1088#1091#1077#1090#1077' '#1093#1088#1072#1085#1080#1090#1100' '#1074' '#1082#1086#1083#1083#1077#1082#1094#1080#1080
       ExplicitWidth = 361
     end
   end
   object Panel3: TPanel
     Left = 0
-    Top = 56
+    Top = 58
     Width = 460
     Height = 89
     Margins.Left = 7

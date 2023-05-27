@@ -11,12 +11,10 @@ object frmStat: TfrmStat
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   DesignSize = (
     473
     244)
-  PixelsPerInch = 96
   TextHeight = 13
   object btnClose: TButton
     Left = 390

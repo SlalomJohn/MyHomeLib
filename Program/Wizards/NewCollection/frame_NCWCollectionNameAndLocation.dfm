@@ -20,8 +20,7 @@ inherited frameNCWNameAndLocation: TframeNCWNameAndLocation
       ' '#1087#1083#1072#1085#1080#1088#1091#1077#1090#1077' '#1093#1088#1072#1085#1080#1090#1100' '#1082#1085#1080#1075#1080'.'
     Transparent = True
     WordWrap = True
-    ExplicitTop = 61
-    ExplicitWidth = 422
+    ExplicitWidth = 429
   end
   object pageHint: TMHLStaticTip [1]
     AlignWithMargins = True
@@ -37,7 +36,6 @@ inherited frameNCWNameAndLocation: TframeNCWNameAndLocation
   end
   inherited pnTitle: TPanel
     Width = 460
-    Height = 58
     ExplicitWidth = 460
     inherited lblTitle: TLabel
       Width = 432
@@ -75,15 +73,15 @@ inherited frameNCWNameAndLocation: TframeNCWNameAndLocation
       FocusControl = edCollectionFile
     end
     object Label5: TLabel
-      Left = 21
+      Left = 32
       Top = 69
-      Width = 96
+      Width = 95
       Height = 15
       Caption = '&'#1055#1072#1087#1082#1072' '#1089' '#1082#1085#1080#1075#1072#1084#1080':'
       FocusControl = edCollectionRoot
     end
     object Label8: TLabel
-      Left = 21
+      Left = 32
       Top = 15
       Width = 118
       Height = 15

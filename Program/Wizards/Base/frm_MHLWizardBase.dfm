@@ -12,12 +12,10 @@ object MHLWizardBase: TMHLWizardBase
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
   Scaled = False
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object pnButtons: TPanel
     Left = 0
@@ -29,11 +27,13 @@ object MHLWizardBase: TMHLWizardBase
     BevelKind = bkTile
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitTop = 352
+    ExplicitWidth = 516
     DesignSize = (
       520
       39)
     object btnCancel: TButton
-      Left = 436
+      Left = 432
       Top = 8
       Width = 75
       Height = 25
@@ -42,9 +42,10 @@ object MHLWizardBase: TMHLWizardBase
       Caption = #1054#1090#1084#1077#1085#1072
       TabOrder = 0
       OnClick = OnCancel
+      ExplicitLeft = 428
     end
     object btnForward: TButton
-      Left = 342
+      Left = 338
       Top = 8
       Width = 75
       Height = 25
@@ -52,9 +53,10 @@ object MHLWizardBase: TMHLWizardBase
       Caption = #1042#1087#1077#1088#1077#1076' >'
       TabOrder = 1
       OnClick = DoChangePage
+      ExplicitLeft = 334
     end
     object btnBackward: TButton
-      Left = 261
+      Left = 257
       Top = 8
       Width = 75
       Height = 25
@@ -62,6 +64,7 @@ object MHLWizardBase: TMHLWizardBase
       Caption = '< '#1053#1072#1079#1072#1076
       TabOrder = 2
       OnClick = DoChangePage
+      ExplicitLeft = 253
     end
   end
 end

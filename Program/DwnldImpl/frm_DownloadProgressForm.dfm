@@ -5,8 +5,7 @@ inherited DownloadProgressForm: TDownloadProgressForm
   ClientWidth = 428
   Position = poMainFormCenter
   ExplicitWidth = 434
-  ExplicitHeight = 161
-  PixelsPerInch = 96
+  ExplicitHeight = 173
   TextHeight = 13
   object lblCurrent: TLabel
     AlignWithMargins = True

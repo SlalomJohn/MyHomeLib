@@ -18,11 +18,9 @@ object frmBookSearch: TfrmBookSearch
   GlassFrame.Right = 5
   GlassFrame.Bottom = 5
   KeyPreview = True
-  OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
   OnKeyDown = FormKeyDown
-  PixelsPerInch = 96
   TextHeight = 13
   object RzPanel1: TMHLSimplePanel
     Left = 0

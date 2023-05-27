@@ -12,5 +12,8 @@ inherited frameNCWWelcom: TframeNCWWelcom
       ExplicitWidth = 236
       ExplicitHeight = 26
     end
+    inherited lblPageHint: TLabel
+      Width = 286
+    end
   end
 end

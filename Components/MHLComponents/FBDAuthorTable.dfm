@@ -12,10 +12,8 @@ object frmEditAuthorFull: TfrmEditAuthorFull
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poOwnerFormCenter
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object gbButtons: TPanel
     Left = 0
@@ -25,6 +23,7 @@ object frmEditAuthorFull: TfrmEditAuthorFull
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitWidth = 288
     object btnSave: TButton
       Left = 126
       Top = 3

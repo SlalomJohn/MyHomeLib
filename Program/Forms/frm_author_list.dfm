@@ -11,9 +11,7 @@ object frmAuthorList: TfrmAuthorList
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poMainFormCenter
-  PixelsPerInch = 96
   TextHeight = 13
   object tvAuthorList: TVirtualStringTree
     AlignWithMargins = True

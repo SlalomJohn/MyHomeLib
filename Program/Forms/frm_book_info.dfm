@@ -23,7 +23,7 @@ object frmBookDetails: TfrmBookDetails
     Top = 47
     Width = 622
     Height = 394
-    ActivePage = tsReview
+    ActivePage = tsFileInfo
     Align = alClient
     DoubleBuffered = True
     ParentDoubleBuffered = False

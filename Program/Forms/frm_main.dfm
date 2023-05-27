@@ -2,6 +2,7 @@ object frmMain: TfrmMain
   Left = 0
   Top = 0
   HelpContext = 2
+  ActiveControl = cbDate
   Caption = 'MyHomeLib'
   ClientHeight = 772
   ClientWidth = 792
@@ -236,7 +237,7 @@ object frmMain: TfrmMain
     Width = 786
     Height = 685
     HelpContext = 1
-    ActivePage = tsBySerie
+    ActivePage = tsSearch
     Align = alClient
     OwnerDraw = True
     TabOrder = 2
@@ -395,19 +396,18 @@ object frmMain: TfrmMain
         object AuthorBookInfoSplitter: TMHLSplitter
           Left = 0
           Top = 426
-          Width = 549
+          Width = 545
           Height = 3
           Cursor = crVSplit
           Align = alBottom
           ResizeControl = ipnlAuthors
           ExplicitTop = 454
-          ExplicitWidth = 545
         end
         object ipnlAuthors: TInfoPanel
           AlignWithMargins = True
           Left = 3
           Top = 432
-          Width = 543
+          Width = 539
           Height = 152
           Align = alBottom
           Color = clBlack
@@ -425,7 +425,7 @@ object frmMain: TfrmMain
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 543
+          Width = 539
           Height = 26
           Align = alTop
           Font.Charset = DEFAULT_CHARSET
@@ -437,7 +437,7 @@ object frmMain: TfrmMain
           TabOrder = 0
           ExplicitWidth = 535
           object lblBooksTotalA: TLabel
-            Left = 436
+            Left = 432
             Top = 0
             Width = 107
             Height = 26
@@ -458,7 +458,7 @@ object frmMain: TfrmMain
             ExplicitHeight = 13
           end
           object lblLang: TLabel
-            Left = 342
+            Left = 338
             Top = 0
             Width = 31
             Height = 26
@@ -470,7 +470,7 @@ object frmMain: TfrmMain
           end
           object cbLangSelectA: TComboBox
             AlignWithMargins = True
-            Left = 376
+            Left = 372
             Top = 3
             Width = 50
             Height = 21
@@ -483,6 +483,7 @@ object frmMain: TfrmMain
             OnChange = cbLangSelectAChange
             Items.Strings = (
               '-')
+            ExplicitLeft = 376
           end
         end
         object tvBooksA: TBookTree
@@ -824,7 +825,6 @@ object frmMain: TfrmMain
             Alignment = taRightJustify
             Caption = '('#1082#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1082#1085#1080#1075')'
             Layout = tlCenter
-            ExplicitLeft = 436
             ExplicitHeight = 13
           end
           object lblSeries: TLabel
@@ -846,7 +846,6 @@ object frmMain: TfrmMain
             Alignment = taRightJustify
             Caption = #1071#1079#1099#1082
             Layout = tlCenter
-            ExplicitLeft = 342
             ExplicitHeight = 13
           end
           object cbLangSelectS: TComboBox
@@ -1066,15 +1065,14 @@ object frmMain: TfrmMain
       object pnGenreBooksView: TMHLSimplePanel
         Left = 233
         Top = 0
-        Width = 549
+        Width = 545
         Height = 657
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 545
         object GenreBookInfoSplitter: TMHLSplitter
           Left = 0
           Top = 548
-          Width = 549
+          Width = 545
           Height = 3
           Cursor = crVSplit
           Align = alBottom
@@ -1086,7 +1084,7 @@ object frmMain: TfrmMain
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 543
+          Width = 539
           Height = 26
           Align = alTop
           Font.Charset = DEFAULT_CHARSET
@@ -1096,9 +1094,8 @@ object frmMain: TfrmMain
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          ExplicitWidth = 539
           object lblBooksTotalG: TLabel
-            Left = 436
+            Left = 432
             Top = 0
             Width = 107
             Height = 26
@@ -1119,7 +1116,7 @@ object frmMain: TfrmMain
             ExplicitHeight = 13
           end
           object lbl2: TLabel
-            Left = 342
+            Left = 338
             Top = 0
             Width = 31
             Height = 26
@@ -1132,7 +1129,7 @@ object frmMain: TfrmMain
           object cbLangSelectG: TComboBox
             Tag = 2
             AlignWithMargins = True
-            Left = 376
+            Left = 372
             Top = 3
             Width = 50
             Height = 21
@@ -1145,6 +1142,7 @@ object frmMain: TfrmMain
             OnChange = cbLangSelectAChange
             Items.Strings = (
               '-')
+            ExplicitLeft = 376
           end
         end
         object ipnlGenres: TInfoPanel
@@ -1277,11 +1275,10 @@ object frmMain: TfrmMain
       object pnSearchBooksView: TMHLSimplePanel
         Left = 233
         Top = 0
-        Width = 549
+        Width = 545
         Height = 657
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 545
         object SearchBookInfoSplitter: TMHLSplitter
           Left = 0
           Top = 498
@@ -1976,15 +1973,14 @@ object frmMain: TfrmMain
       object pnGroupBooksView: TMHLSimplePanel
         Left = 233
         Top = 0
-        Width = 549
+        Width = 545
         Height = 657
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 545
         object GroupBookInfoSplitter: TMHLSplitter
           Left = 0
           Top = 498
-          Width = 549
+          Width = 545
           Height = 3
           Cursor = crVSplit
           Align = alBottom
@@ -1996,7 +1992,7 @@ object frmMain: TfrmMain
           AlignWithMargins = True
           Left = 3
           Top = 504
-          Width = 543
+          Width = 539
           Height = 150
           Align = alBottom
           Color = clBlack
@@ -2005,7 +2001,6 @@ object frmMain: TfrmMain
           OnAuthorLinkClicked = AuthorLinkClicked
           OnSeriesLinkClicked = SeriesLinkClicked
           OnGenreLinkClicked = GenreLinkClicked
-          ExplicitWidth = 539
           DesignSize = (
             539
             150)
@@ -2043,7 +2038,7 @@ object frmMain: TfrmMain
           ParentFont = False
           TabOrder = 0
           object lblBooksTotalF: TLabel
-            Left = 436
+            Left = 432
             Top = 0
             Width = 107
             Height = 26
@@ -2064,7 +2059,7 @@ object frmMain: TfrmMain
             ExplicitHeight = 13
           end
           object lbl3: TLabel
-            Left = 342
+            Left = 338
             Top = 0
             Width = 31
             Height = 26
@@ -2077,7 +2072,7 @@ object frmMain: TfrmMain
           object cbLangSelectF: TComboBox
             Tag = 4
             AlignWithMargins = True
-            Left = 376
+            Left = 372
             Top = 3
             Width = 50
             Height = 21
@@ -2090,6 +2085,7 @@ object frmMain: TfrmMain
             OnChange = cbLangSelectAChange
             Items.Strings = (
               '-')
+            ExplicitLeft = 376
           end
         end
         object tvBooksF: TBookTree
