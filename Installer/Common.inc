@@ -12,10 +12,21 @@
 ;**************************************************************
 
 [Setup]
-AppCopyright=(c) 2023 Oleksiy Penkov
-#define AppURL = 'https://github.com/OleksiyPenkov/MyHomeLib'
-#define MyAppName = 'MyHomeLib'
-#define AppExeName = MyAppName + '.exe'
+;#define AppURL = "https://github.com/OleksiyPenkov/MyHomeLib"
+#define AppURL = "https://github.com/OleksiyPenkov/"
+#define MyAppName = "MyHomeLib"
+#define AppExeName = MyAppName + ".exe"
+
+#define AppCopyright="(c) 2023 Oleksiy Penkov"
+VersionInfoCopyright = {#AppCopyright}
+AppPublisher=Oleksiy Penkov
+AppPublisherURL = {#AppURL + MyAppName + "/"}
+AppSupportURL = {#AppURL + MyAppName + "/"}
+AppUpdatesURL = {#AppURL + MyAppName + "/"}
+AppName = {#MyAppName}
+DefaultDirName = {commonpf}\{#MyAppName}\
+DefaultGroupName = {#MyAppName}
+UninstallDisplayIcon = {app}\{#AppExeName}
 PrivilegesRequired=poweruser
 AppID={{B9B6C409-01CB-4AB6-8E4F-403B49A25B56}
 OutputDir=.\Out

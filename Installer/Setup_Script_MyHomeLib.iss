@@ -9,30 +9,21 @@
 #include "common.inc"
 
 [Setup]
-#define SourceFolder = '.\Common\x86\'
-;#define SourceFolder = '..\Program\Out\Bin\'
-;#define AppURL = 'https://github.com/OleksiyPenkov/MyHomeLib'
-;#define protected MyAppName = 'MyHomeLib'
-;#define protected AppExeName = MyAppName + '.exe'
+#define SourceFolder = ".\Common\x86\"
 #define protected Major 
 #define protected Minor
 #define protected Revision
 #define protected Build
 #define protected FullSourcePath = SourceFolder + AppExeName
- 
 #define AppVersion GetVersionComponents(FullSourcePath, Major, Minor, Revision, Build)
-#define protected ShortVersion = Str(Major) +'.' + Str(Minor) +'.' + Str(Revision) 
-OutputBaseFilename = {#'Setup_' + MyAppName + '_' + ShortVersion}
-
+#define protected ShortVersion = Str(Major) +"." + Str(Minor) +"." + Str(Revision)
+OutputBaseFilename = {#"Setup_" + MyAppName + "_" + ShortVersion}
 VersionInfoVersion = {#AppVersion}
-AppName = {#MyAppName}
-DefaultDirName = {commonpf}\{#MyAppName}\
-DefaultGroupName = {#MyAppName}
-AppVerName = {#MyAppName + " v. " + ShortVersion}
-UninstallDisplayIcon = {app}\{#AppExeName}
-AppPublisherURL = {#AppURL + MyAppName + '/'}
-AppSupportURL = {#AppURL + MyAppName + '/'}
-AppUpdatesURL = {#AppURL + MyAppName + '/'}
+VersionInfoTextVersion = {#AppVersion}
+VersionInfoProductVersion = {#ShortVersion}
+VersionInfoProductTextVersion = {#ShortVersion}
+AppVerName = {#MyAppName}
+AppVersion = {#ShortVersion}
 
 [Files]
 Source: {#SourceFolder}sqlite3.dll; DestDir: {app}; Flags: replacesameversion
