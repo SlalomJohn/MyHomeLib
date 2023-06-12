@@ -67,7 +67,7 @@ Source: Common\_update_readme.txt; DestDir: {app}; Flags: replacesameversion
 
 Source: Common\genres_nonfb2.glst; DestDir: {app}; Flags: replacesameversion
 Source: Common\genres_fb2.glst; DestDir: {app}; Flags: replacesameversion
-Source: Common\WhatsNew_UTF8.txt; DestDir: {app}; Flags: replacesameversion
+Source: ..\WhatsNew_UTF8.txt; DestDir: {app}; Flags: replacesameversion
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}
