@@ -6,6 +6,7 @@
 * Merge pull request #41 from pasha-zzz/patch-1 - Use runtime package in 64 bit MHLComponents
 * Merge pull request #44 from pasha-zzz/patch-3 - Search date intervals correction
 * Merge pull request #42 from pasha-zzz/patch-2 - 64 MB SQLite cache is really faster on create and update
+* Fixed "deprecated" in StaticTip
 
 2.4.0.851
 * Installer corrections
