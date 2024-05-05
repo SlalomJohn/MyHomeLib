@@ -3,6 +3,7 @@
 Out
 Common
 /Program/*.dsk
+/Program/*.identcache
 __history*
 __recovery*
 *.~pas
